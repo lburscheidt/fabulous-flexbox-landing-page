@@ -50,3 +50,28 @@ quote {
   font-style: italic;
   font-weight: 300;
 }
+
+body{display: flex;
+flex-direction: column;}
+
+header{
+  border: 4px solid pink;
+  min-height: 50px;
+  background-color: var(--dark-blue);
+}
+
+main{
+  border: 4px solid pink;
+  min-height: 50px;
+}
+section{
+  border: 4px solid orange;
+  min-height: 50px;
+}
+footer{
+  border: 4px solid pink;
+  min-height: 50px;
+}
+
+/*SECTIONS*/
+
