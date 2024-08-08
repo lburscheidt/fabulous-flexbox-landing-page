@@ -14,3 +14,39 @@
 
   font-family: Roboto;
 }
+
+h1 {
+  font-size: var(--48);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: var(--36);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: var(--24);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--18);
+  font-weight: 700;
+}
+
+p {
+  font-size: var(--18);
+}
+
+a {
+  font-size: var(--18);
+  color: var(--grey);
+}
+
+quote {
+  color: var(--dark-blue);
+  font-size: var(--36);
+  font-style: italic;
+  font-weight: 300;
+}
