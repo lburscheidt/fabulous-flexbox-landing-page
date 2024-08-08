@@ -18,6 +18,7 @@
 h1 {
   font-size: var(--48);
   font-weight: 800;
+  line-height: 1;
 }
 
 h2 {
@@ -87,7 +88,9 @@ footer {
 /*SECTIONS*/
 /*The sections all have width restrictions, marked up in dark green. I've set these at 70% in all sections.*/
 
+/*HEADER*/
 header-content {
+  border: 3px solid darkgreen;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -106,6 +109,56 @@ ul {
   gap: 16px;
 }
 
-footer p{
+/*HERO*/
+#hero-section {
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+hero-text h1 {
+  color: var(--white);
+}
+hero-text p {
+  color: var(--grey);
+}
+button {
+  background-color: var(--light-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+  padding: 5px;
+}
+
+hero-content {
+  border: 3px solid darkgreen;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+hero-text,
+hero-image {
+  border: 3px solid yellow;
+  padding: 100px 0 100px 0;
+  width: 50%;
+}
+hero-image {
+}
+hero-image img {
+  max-width: 80%;
+  height: auto;
+}
+/*FOOTER*/
+footer p {
   color: var(--grey);
 }
