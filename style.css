@@ -51,27 +51,30 @@ quote {
   font-weight: 300;
 }
 
-body{display: flex;
-flex-direction: column;}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-header{
+header {
   border: 4px solid pink;
   min-height: 50px;
   background-color: var(--dark-blue);
 }
 
-main{
+main {
   border: 4px solid pink;
+  flex: 1;
   min-height: 50px;
 }
-section{
+section {
   border: 4px solid orange;
   min-height: 50px;
 }
-footer{
+footer {
   border: 4px solid pink;
   min-height: 50px;
 }
 
 /*SECTIONS*/
-
