@@ -183,7 +183,41 @@ hero-image img {
 .info {
   background-color: var(--white);
 }
+.info h2,
+.info figcaption {
+  color: var(--dark-blue);
+  text-align: center;
+}
 
+info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+info-strip {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+figure {
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: center; */
+  justify-content: center;
+}
+
+figure img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid var(--light-blue);
+}
 /*FOOTER*/
 footer p {
   color: var(--grey);
