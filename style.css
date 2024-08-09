@@ -76,25 +76,36 @@ main {
   flex: 1;
   min-height: 50px;
 }
+
 section {
   border: 4px solid orange;
   min-height: 50px;
 }
+
 footer {
   border: 4px solid pink;
   min-height: 50px;
 }
+section {
+  display: flex;
+  justify-content: center;
+}
 
-/*SECTIONS*/
 /*The sections all have width restrictions, marked up in dark green. I've set these at 70% in all sections.*/
-
+section-content {
+  display: block;
+  width: 70%;
+  border: 10px solid red;
+  padding: 10px;
+}
+/*SECTIONS*/
 /*HEADER*/
 header-content {
   border: 3px solid darkgreen;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
   align-items: center;
 }
 
@@ -110,12 +121,7 @@ ul {
 }
 
 /*HERO*/
-#hero-section {
-  background-color: var(--dark-blue);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+
 hero-text h1 {
   color: var(--white);
 }
@@ -135,10 +141,12 @@ hero-content {
   border: 3px solid darkgreen;
   display: flex;
   flex-direction: row;
-  width: 70%;
-  align-items: center;
-  justify-content: center;
   gap: 16px;
+  justify-content: space-around;
+  max-width: 1280px;
+  margin: auto;
+  padding: 25px 0;
+  width: 100%;
 }
 
 hero-text {
@@ -148,16 +156,34 @@ hero-text {
 
 hero-text,
 hero-image {
+  flex: 0 0 45%;
   border: 3px solid yellow;
-  padding: 100px 0 100px 0;
   width: 50%;
 }
+
 hero-image {
+  overflow: hidden;
+  position: relative;
 }
+
 hero-image img {
-  max-width: 80%;
+  position: absolute;
   height: auto;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
+
+.hero {
+  background-color: var(--dark-blue);
+}
+
+/*INFO*/
+
+.info {
+  background-color: var(--white);
+}
+
 /*FOOTER*/
 footer p {
   color: var(--grey);
