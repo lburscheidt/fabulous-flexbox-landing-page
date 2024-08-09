@@ -58,11 +58,6 @@ body {
   min-height: 100vh;
 }
 
-header {
-  border: 4px solid pink;
-  min-height: 50px;
-}
-
 header,
 footer {
   background-color: var(--dark-blue);
@@ -72,20 +67,11 @@ footer {
 }
 
 main {
-  border: 4px solid pink;
   flex: 1;
-  min-height: 50px;
 }
 
-section {
-  border: 4px solid orange;
-  min-height: 50px;
-}
 
-footer {
-  border: 4px solid pink;
-  min-height: 50px;
-}
+
 section {
   display: flex;
   justify-content: center;
@@ -104,14 +90,12 @@ button {
 section-content {
   display: block;
   width: 70%;
-  border: 10px solid red;
   padding: 10px;
 }
 /*SECTIONS*/
 
 /*HEADER*/
 header-content {
-  border: 3px solid darkgreen;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -150,7 +134,7 @@ hero-content {
   gap: 16px;
   justify-content: space-around;
   margin: auto;
-  padding: 25px 0;
+  padding: 50px 0;
   width: 100%;
 }
 
@@ -193,6 +177,7 @@ info-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px;
 }
 
 info-strip {
@@ -218,6 +203,24 @@ figure img {
   border-radius: 10px;
   border: 4px solid var(--light-blue);
 }
+
+/*QUOTE*/
+.quote {
+  background-color: var(--grey);
+}
+
+byline p {
+  font-weight: 700;
+}
+quote-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 100px 150px;
+}
+
+/*CTA*/
+
 /*FOOTER*/
 footer p {
   color: var(--grey);
