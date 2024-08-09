@@ -70,8 +70,6 @@ main {
   flex: 1;
 }
 
-
-
 section {
   display: flex;
   justify-content: center;
@@ -82,16 +80,19 @@ button {
   color: var(--white);
   border: none;
   border-radius: 10px;
-  width: 70px;
-  padding: 5px;
+  width: 100px;
+  padding: 5px 10px;
 }
 
 /*The sections all have width restrictions, marked up in dark green. I've set these at 70% in all sections.*/
 section-content {
-  display: block;
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
   padding: 10px;
 }
+
 /*SECTIONS*/
 
 /*HEADER*/
@@ -129,9 +130,8 @@ hero-content button {
 }
 
 hero-content {
-  border: 3px solid darkgreen;
   display: flex;
-  gap: 16px;
+  gap: 50px;
   justify-content: space-around;
   margin: auto;
   padding: 50px 0;
@@ -147,7 +147,6 @@ hero-text,
 hero-image {
   flex: 1;
   position: relative;
-  border: 3px solid yellow;
   width: 50%;
 }
 
@@ -220,7 +219,37 @@ quote-content {
 }
 
 /*CTA*/
+.cta {
+  background-color: var(--white);
+}
 
+outer-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+}
+call-to-action {
+  background-color: var(--light-blue);
+  padding: 20px 0;
+  border-radius: 10px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+cta-button button {
+  border: 2px solid var(--white);
+}
+cta-text h4 {
+  color: var(--white);
+}
+
+cta-text p {
+  color: var(--grey);
+}
 /*FOOTER*/
 footer p {
   color: var(--grey);
